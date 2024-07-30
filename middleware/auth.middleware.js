@@ -49,3 +49,7 @@ export const verifyJWT = async (req, res, next) => {
       );
   }
 };
+
+
+/*
+"postgresql://postgres:pan123@localhost:5432/backendprisma?schema=public" */
