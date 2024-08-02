@@ -69,6 +69,8 @@ export const createUser = async (req, res) => {
   }
 };
 
+
+
 export const loginUser = async (req, res) => {
   const { email, password } = req.body;
 
@@ -265,3 +267,51 @@ export const logoutUser = (req, res) => {
       .json(new ApiResponse(false, 500, null, "Internal Server Error"));
   }
 };
+
+
+/*
+func filterEvenNumbers(numbers:[Int]) -> [Int] {
+var evenNumbers = Int
+for num in numbers {
+if num%2 == 0 {
+evenNumbers.append(num)}
+}
+return evenNumbers
+}
+
+func filterEvenNumbers(numbers: [Int]) -> [Int] {
+    var evenNumbers: [Int] = []
+    for num in numbers {
+        if num % 2 == 0 {
+            evenNumbers.append(num)
+        }
+    }
+    return evenNumbers
+}
+
+calculates the square of a number
+
+func square(_ n:Int) -> Int {
+return n*n
+}
+
+func square(_ n:
+ */
+
+
+/*
+func filterEvenNumbers(numbers: [Int]) -> [Int] {
+    var evenNumbers: [Int] = []
+    for num in numbers {
+        if num % 2 == 0 {
+            evenNumbers.append(num)
+        }
+    }
+    return evenNumbers
+}
+
+
+
+let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+let evenNumbers = filterEvenNumbers(numbers: numbers)
+print(evenNumbers) */
